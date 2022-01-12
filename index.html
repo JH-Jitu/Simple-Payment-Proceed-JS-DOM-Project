@@ -42,60 +42,65 @@
 
             <!-- Button Section -->
             <section>
+              <!-- Memory -->
               <div class="mt-4">
                 <b>Memory</b> <br />
                 <button
                   id="min-memory-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleMemory(0)"
+                  class="btn btn-outline-dark extra-memory-cost-btn"
+                  onclick="handlePrice(0, 'min-memory-button',  'extra-memory-cost')"
                 >
                   8GB unified memory
                 </button>
                 <button
                   id="max-memory-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleMemory(180)"
+                  class="btn btn-outline-dark extra-memory-cost-btn"
+                  onclick="handlePrice(200, 'max-memory-button', 'extra-memory-cost')"
                 >
                   16GB unified memory
                 </button>
               </div>
+
+              <!-- Storage -->
               <div class="mt-4">
                 <b>Storage</b> <br />
                 <button
                   id="min-storage-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleStorage(0)"
+                  class="btn btn-outline-dark extra-storage-cost-btn"
+                  onclick="handlePrice(0, 'min-storage-button', 'extra-storage-cost')"
                 >
                   256GB SSD storage
                 </button>
                 <button
                   id="mid-storage-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleStorage(100)"
+                  class="btn btn-outline-dark extra-storage-cost-btn"
+                  onclick="handlePrice(200, 'mid-storage-button', 'extra-storage-cost')"
                 >
                   512GB SSD storage
                 </button>
                 <button
                   id="max-storage-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleStorage(180)"
+                  class="btn btn-outline-dark extra-storage-cost-btn"
+                  onclick="handlePrice(400, 'max-storage-button', 'extra-storage-cost')"
                 >
                   1TB SSD storage
                 </button>
               </div>
+
+              <!-- Delivery -->
               <div class="mt-4">
                 <b>Choose your delivery option</b> <br />
                 <button
                   id="free-delivery-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleDel(0)"
+                  class="btn btn-outline-dark delivery-charge-cost-btn"
+                  onclick="handlePrice(0, 'free-delivery-button', 'delivery-charge-cost')"
                 >
                   Friday, Aug 25 FREE Prime Delivery
                 </button>
                 <button
                   id="charged-delivery-button"
-                  class="btn btn-outline-dark"
-                  onclick="handleDel(20)"
+                  class="btn btn-outline-dark delivery-charge-cost-btn"
+                  onclick="handlePrice(20, 'charged-delivery-button', 'delivery-charge-cost')"
                 >
                   Friday, Aug 21 Delivery charge $20
                 </button>
@@ -109,8 +114,8 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Best Price</th>
-                        <th>$<span>1299</span></th>
+                        <th>Base Price</th>
+                        <th>$<span>1249</span></th>
                       </tr>
                       <tr>
                         <th>Extra Memory Cost</th>
@@ -168,7 +173,7 @@
     ></script>
 
     <!-- Javascript -->
-    <!-- <script src="/js/script.js"></script> -->
-    <script src="js/new.js"></script>
+    <!-- <script src="js/new.js"></script> -->
+    <script src="js/shortScript.js"></script>
   </body>
 </html>
